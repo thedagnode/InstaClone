@@ -46,7 +46,7 @@ class CreatePostActivity : AppCompatActivity() {
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
-        if (requestCode == PICK_PHOTO_CODE){z
+        if (requestCode == PICK_PHOTO_CODE){
             if (resultCode == Activity.RESULT_OK){
                 photoUri = data?.data
                 Log.i(TAG, "photoUri: $photoUri")
